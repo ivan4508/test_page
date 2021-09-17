@@ -17,5 +17,25 @@ export default {
 }
 </script>
 <style lang="less">
+@import './assets/css/smart-grid.less';
+@import './assets/css/smart-grid-per.less';
+.reset();
+.wrapper{
+  .wrapper();
+}
 
+.btn{
+  padding: 11px 22px;
+  border-radius:50px;
+  border:none;
+  cursor: pointer;
+  &.danger{
+    background-color: #FE5F5F;
+    color:#fff;
+  }
+  &.info{
+    background-color: #3865A7;
+    color:#fff;
+  }
+}
 </style>

@@ -1,14 +1,24 @@
 <template lang='pug'>
-app-nav-bar
+header
+	.wrapper
+		app-nav-bar
+		app-content-header
 </template>
 <script>
-	import NavBar from '@/components/header/NavBar.vue'
+	import NavBar from './NavBar.vue';
+	import ContentHeader from './ContentHeader.vue';
 	export default {
 		components:{
-			'app-nav-bar':NavBar
+			'app-nav-bar':NavBar,
+			'app-content-header':ContentHeader
 		}
 	}
 </script>
 <style lang='less'>
-
+header{
+	padding:35px;
+	height: 779px;
+	background: url(../../assets/img/header_bg.png) no-repeat;
+	background-size:100% 100%;
+}
 </style>

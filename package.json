@@ -19,10 +19,12 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "gulp": "^4.0.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "pug": "^3.0.2",
-    "pug-plain-loader": "^1.1.0"
+    "pug-plain-loader": "^1.1.0",
+    "smart-grid": "^2.1.2"
   },
   "eslintConfig": {
     "root": true,
