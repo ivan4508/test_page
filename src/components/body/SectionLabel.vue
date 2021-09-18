@@ -10,7 +10,8 @@ h4 Для начала работы ответьте на вопрос, есть
 	}
 </script>
 <style lang="less" scoped>
-
+@import '../../assets/css/smart-grid.less';
+@import '../../assets/css/smart-grid-per.less';
 .font(@family,@weight,@size,@line,@color){
 	font-family: @family;
 	font-weight: @weight;

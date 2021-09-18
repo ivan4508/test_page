@@ -22,6 +22,12 @@ export default {
 .reset();
 .wrapper{
   .wrapper();
+  .items{
+    .row-flex();
+    .item{
+      .col();
+    }
+  }
 }
 
 .btn{
