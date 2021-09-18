@@ -2,7 +2,6 @@
 .item.first
 	img(:src='pathImg')
 .item.last
-
 	h4.title {{title}}
 	p.subtitle
 		i.icon_label
