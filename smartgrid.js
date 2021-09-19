@@ -3,7 +3,7 @@ module.exports = {
 	offset: "30px",
 	//mobileFirst: true,
 	container: {
-        maxWidth: "1164px",
+        maxWidth: "1140px",
         fields: "30px"
     },
 	breakPoints: {

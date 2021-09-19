@@ -18,7 +18,7 @@ header
 header{
 	padding:35px;
 	height: 779px;
-	background: url(../../assets/img/header_bg.png) no-repeat;
+	background:#ffffff url(../../assets/img/header_bg.png) no-repeat;
 	background-size:100% 100%;
 }
 </style>

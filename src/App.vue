@@ -17,8 +17,7 @@ export default {
 }
 </script>
 <style lang="less">
-@import './assets/css/smart-grid.less';
-@import './assets/css/smart-grid-per.less';
+@import './assets/css/styles.less';
 .reset();
 .wrapper{
   .wrapper();

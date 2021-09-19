@@ -11,24 +11,35 @@ nav.d-flex
 	}
 </script>
 <style lang='less' scoped>
-.font(@family,@weight,@size,@line,@color){
-	font-family: @family;
-	font-weight: @weight;
-	font-size: @size;
-	line-height: @line;
-	color: @color;
-}
+@import '../../assets/css/styles.less';
 .d-flex{
 	display: flex;
 	justify-content: space-between;
+	align-items:flex-start;
 }
+.btn.danger{
+padding:8px 28px;
+}
+nav{
+	padding-left: 23px;
+	.icon_online_assistant{
+		background-color: #FE5F5F;
+		padding:8px 13px;
+		border-radius:100%;
+		&:after{
+			transform:translate(1px,2px);
+			display: inline-block;
+		}
+	}
+}
+
 .cabinet{
 	.font(Circe,normal,16px,24px,#FFFFFF);
 	text-decoration: none;
 }
 .link{
 	text-decoration: none;
-	margin:auto auto auto 27px;
+	margin:7px auto auto 27px;
 }
 .link,
 .online_assistant{
@@ -40,6 +51,7 @@ nav.d-flex
 	border:none;
 	display: flex;
 	align-items:center;
+	margin:-12px 0 auto auto;
 	.font(Circe,bold,16px,122.4%,#FE5F5F);
 }
 .icon_online_assistant{

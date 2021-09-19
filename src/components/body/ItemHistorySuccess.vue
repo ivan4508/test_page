@@ -24,16 +24,12 @@
 	}
 </script>
 <style lang="less" scoped>
-@import '../../assets/css/smart-grid.less';
-@import '../../assets/css/smart-grid-per.less';
-.font(@family,@weight,@size,@line,@color){
-	font-family: @family;
-	font-weight: @weight;
-	font-size: @size;
-	line-height: @line;
-	color: @color;
-}
+@import '../../assets/css/styles.less';
 .item{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 	&.first{
 		.size(4)
 	}
@@ -45,15 +41,24 @@
 	}
 	.title{
 		.font(Circe,bold,24px,95.9%,#2B2B2B);
+		margin-bottom: 22px;
 	}
 	.subtitle{
 		.font(Circe,bold,16px,122.4%,#FE5F5F);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 15px;
 	}
 	.description{
 		.font(Circe,normal,16px,115.4%,#000000);
+		margin-bottom: 17px;
+	}
+	.icon_label{
+		display: inline-block;
+		width: 46px;
+		height: 32px;
+
 	}
 }
 </style>

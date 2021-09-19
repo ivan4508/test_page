@@ -1,7 +1,8 @@
 <template lang='pug'>
 h2.label.first
 	i.icon_dot
-	| Преимущества
+	|
+	span Преимущества
 	i.icon_dot
 .items.j-between
 	app-item-benefits(v-for='item in listBenefits' v-bind='item')
@@ -9,10 +10,8 @@ h2.label.last
 	i.icon_dot
 	|Истории успеха
 	i.icon_dot
-.items.j-between
-	app-item-history-success(v-for='item in ListHistorySuccess' v-bind='item')
-.items
-.items
+.items.j-between.order(v-for='item in ListHistorySuccess')
+	app-item-history-success(v-bind='item')
 </template>
 <script>
 	import ItemBenefits from './ItemBenefits.vue';
@@ -37,18 +36,18 @@ h2.label.last
 	}
 </script>
 <style lang="less" scoped>
-.font(@family,@weight,@size,@line,@color){
-	font-family: @family;
-	font-weight: @weight;
-	font-size: @size;
-	line-height: @line;
-	color: @color;
-}
+@import '../../assets/css/styles.less';
 .label{
 	.font(Circe,bold,40px,122.4%,#2B2B2B);
 	text-align: center;
 	&.first{
+		margin-top:3px;
+		transform:translateX(7px);
 		margin-bottom: 97px;
+		span{
+			margin-left:16px;
+			margin-right:16px;
+		}
 	}
 	&.last{
 		margin-top: 240px;
@@ -57,8 +56,11 @@ h2.label.last
 	.icon_dot{
 		display: inline-block;
 		transform:translateY(-5px);
-		margin-left:26px;
-		margin-right: 26px;
+	}
+}
+.order{
+	&:nth-child(odd){
+		flex-direction:row-reverse;
 	}
 }
 .j-between{
