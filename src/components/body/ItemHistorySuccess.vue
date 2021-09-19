@@ -30,17 +30,22 @@
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+
 	&.first{
-		.size(4)
+		padding-top:15px;
+		max-width:300px;
+		margin:28px auto auto auto;
 	}
 	&.last{
-		.size(8);
+		max-width:620px;
+		margin:12px auto auto -93px;
 	}
 	.arrow{
 		margin-left: 13px;
 	}
 	.title{
 		.font(Circe,bold,24px,95.9%,#2B2B2B);
+		margin-top: 56px;
 		margin-bottom: 22px;
 	}
 	.subtitle{

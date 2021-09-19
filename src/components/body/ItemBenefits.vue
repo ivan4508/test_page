@@ -22,14 +22,18 @@ export default{
 <style lang="less" scoped>
 @import '../../assets/css/styles.less';
 .item{
-	.size(3);
 	display: flex;
 	flex-direction: column;
 	align-items:center;
+	flex-basis: 25%;
 	img{
 		margin:auto;
 	}
-
+	&:nth-child(2){
+		flex-basis:24%;
+		margin-left:20px;
+		margin-right:20px;
+	}
 	.count{
 		.font(Circe,bold,50px,122.4%,#3865A7);
 	}

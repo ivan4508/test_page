@@ -25,8 +25,10 @@ p{
 button{
 	display: inline-flex;
 	align-items:center;
+	.font(Circe,bold,16px,122.4%,#FFFFFF);
 }
 .icon_online_assistant{
 	margin-right: 10px;
 }
+
 </style>

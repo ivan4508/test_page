@@ -4,13 +4,14 @@ h2.label.first
 	|
 	span Преимущества
 	i.icon_dot
-.items.j-between
+.items.benefits_wrapp
 	app-item-benefits(v-for='item in listBenefits' v-bind='item')
 h2.label.last
 	i.icon_dot
-	|Истории успеха
+	span
+		|Истории успеха
 	i.icon_dot
-.items.j-between.order(v-for='item in ListHistorySuccess')
+.items.history_success.order(v-for='item in ListHistorySuccess')
 	app-item-history-success(v-bind='item')
 </template>
 <script>
@@ -35,23 +36,23 @@ h2.label.last
 		})
 	}
 </script>
-<style lang="less" scoped>
+<style lang="less">
 @import '../../assets/css/styles.less';
 .label{
 	.font(Circe,bold,40px,122.4%,#2B2B2B);
 	text-align: center;
+	span{
+			margin-left:16px;
+			margin-right:16px;
+	}
 	&.first{
 		margin-top:3px;
 		transform:translateX(7px);
-		margin-bottom: 97px;
-		span{
-			margin-left:16px;
-			margin-right:16px;
-		}
+		margin-bottom: 57px;
 	}
 	&.last{
-		margin-top: 240px;
-		margin-bottom: 89px;
+		margin-top: 256px;
+		margin-bottom: 28px;
 	}
 	.icon_dot{
 		display: inline-block;
@@ -59,11 +60,25 @@ h2.label.last
 	}
 }
 .order{
+	img{
+		margin:auto 0 auto auto;
+	}
 	&:nth-child(odd){
 		flex-direction:row-reverse;
 	}
+	&:nth-child(even){
+		.item.last{
+			padding-left:80px;
+		}
+	}
 }
-.j-between{
-	justify-content: space-between;
+.items.benefits_wrapp{
+	justify-content:center;
+	flex-wrap: nowrap;
+}
+.history_success{
+	margin-bottom:75px;
+	paddin-left:15px;
+	justify-content:center;
 }
 </style>
