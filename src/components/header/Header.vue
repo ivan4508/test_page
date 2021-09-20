@@ -15,10 +15,18 @@ header
 	}
 </script>
 <style lang='less'>
+@import '../../assets/css/styles.less';
 header{
 	padding:35px;
 	height: 779px;
 	background:#ffffff url(../../assets/img/header_bg.png) no-repeat;
 	background-size:100% 100%;
+	.xs-block({
+		background-size:cover;
+		padding:0;
+		});
+	.md-block({
+		background-size:cover;
+		});
 }
 </style>

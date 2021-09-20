@@ -47,6 +47,9 @@
 		.font(Circe,bold,24px,95.9%,#2B2B2B);
 		margin-top: 56px;
 		margin-bottom: 22px;
+		.md-block({
+			margin-top: 25px;
+			});
 	}
 	.subtitle{
 		.font(Circe,bold,16px,122.4%,#FE5F5F);
@@ -64,6 +67,9 @@
 		width: 46px;
 		height: 32px;
 
+	}
+	.btn.info{
+		.font(Circe,normal,14px,122.4%,#FFFFFF);
 	}
 }
 </style>

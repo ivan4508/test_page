@@ -26,6 +26,10 @@ export default{
 	flex-direction: column;
 	align-items:center;
 	flex-basis: 25%;
+	.md-block({
+		flex-basis:100%;
+		margin-bottom:15px;
+		});
 	img{
 		margin:auto;
 	}
@@ -33,6 +37,9 @@ export default{
 		flex-basis:24%;
 		margin-left:20px;
 		margin-right:20px;
+		.md-block({
+			flex-basis:100%;
+			});
 	}
 	.count{
 		.font(Circe,bold,50px,122.4%,#3865A7);

@@ -20,6 +20,9 @@ h4{
 .btn-group{
 	:first-child{
 		margin-right: 27px;
+		.md-block({
+			margin-right: 0;
+			});
 	}
 	.btn{
 		width: 33%;
@@ -27,10 +30,18 @@ h4{
 		.font(Circe,normal,22px,122.4%,#FFFFFF);
 		&.danger{
 			margin-left: 24px;
+			.md-block({
+				margin-left: 0;
+				margin-bottom:15px;
+				width: 100%;
+			});
 		}
 		&.info{
-			width: 36%;
+			.md-block({
+				width: 100%;
+			});
 		}
 	}
+
 }
 </style>

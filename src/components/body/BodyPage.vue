@@ -27,12 +27,14 @@
 <style lang='less' scoped>
 @import '../../assets/css/styles.less';
 .wrapp_bg{
-
 	&.first{
 		position: relative;
 		margin-bottom: 156px;
 		padding-top:40px;
 		padding-bottom:136px;
+		.md-block({
+			margin-bottom:70px;
+			});
 		&:after{
 			content:'';
 			display: block;

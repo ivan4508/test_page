@@ -31,15 +31,26 @@ nav{
 			display: inline-block;
 		}
 	}
+	.sm-block({
+		flex-direction:column;
+	});
 }
 
 .cabinet{
 	.font(Circe,normal,16px,24px,#FFFFFF);
 	text-decoration: none;
+	.sm-block({
+		margin:auto;
+		margin-bottom:20px;
+		});
 }
 .link{
 	text-decoration: none;
 	margin:7px auto auto 27px;
+	.sm-block({
+		margin:auto;
+		margin-bottom:20px;
+		});
 }
 .link,
 .online_assistant{
@@ -53,6 +64,11 @@ nav{
 	align-items:center;
 	margin:-12px 0 auto auto;
 	.font(Circe,bold,16px,122.4%,#FE5F5F);
+	.sm-block({
+		margin:auto;
+		margin-bottom:20px;
+		order:-1;
+		});
 }
 .icon_online_assistant{
 	margin:5px 14px auto auto;

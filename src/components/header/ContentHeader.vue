@@ -12,6 +12,10 @@
 	align-items:flex-start;
 	padding-top:58px;
 	padding-left: 23px;
+	.xs-block({
+		padding-top:10px;
+		padding-left: 10px;
+		});
 	h1{
 		.font(Circe,bold,35px,111.4%,#2B2B2B);
 		max-width: 576px;

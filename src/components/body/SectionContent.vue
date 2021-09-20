@@ -53,6 +53,9 @@ h2.label.last
 	&.last{
 		margin-top: 256px;
 		margin-bottom: 28px;
+		.md-block({
+			margin-top: 50px;
+			});
 	}
 	.icon_dot{
 		display: inline-block;
@@ -69,6 +72,9 @@ h2.label.last
 	&:nth-child(even){
 		.item.last{
 			padding-left:80px;
+			.md-block({
+				padding-left: 0;
+				});
 		}
 	}
 }
@@ -80,5 +86,8 @@ h2.label.last
 	margin-bottom:75px;
 	paddin-left:15px;
 	justify-content:center;
+	.md-block({
+		margin-bottom: 25px;
+		});
 }
 </style>
